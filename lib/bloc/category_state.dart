@@ -33,7 +33,7 @@ class NewsCatsState extends Equatable {
         status: status ?? this.status,
         message: message ?? this.message,
         categoriesMessage: message ?? this.categoriesMessage,
-        categoriesNewsModel: categoriesNewsModel ?? this.newsCategoriesList,
+        categoriesNewsModel: categoriesNewsModel ?? newsCategoriesList,
         categoriesStatus: categoriesStatus ?? this.categoriesStatus,
     );
     }

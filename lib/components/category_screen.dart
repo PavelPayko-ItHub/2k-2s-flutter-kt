@@ -16,7 +16,7 @@ import 'package:nytimes_view_portal/bloc/category_bloc.dart';
 import 'package:nytimes_view_portal/components/favstore.dart';
 
 class CategoriesScreen extends StatefulWidget {
-    const CategoriesScreen({Key? key}) : super(key: key);
+    const CategoriesScreen({super.key});
 
     @override
     State<CategoriesScreen> createState() => _CategoriesScreenState();
@@ -109,7 +109,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                             builder: (BuildContext context, state) {
                                 switch(state.categoriesStatus) {
                                 case Status.initial:
-                                    return const Center( child: const SpinKitCircle( size: 50, color: Colors.blue, ), );
+                                    return const Center( child: SpinKitCircle( size: 50, color: Colors.blue, ), );
                                 case Status.failure:
                                     return Text(state.categoriesMessage.toString());
                                 case Status.success:
@@ -129,14 +129,14 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                                                                     fit: BoxFit.cover,
                                                                     height: height * .18,
                                                                     width: width * .3,
-                                                                    placeholder:  (context , url) => Container(child: const Center( child: const SpinKitCircle( size: 50, color: Colors.blue, ), ), ),
-                                                                    errorWidget: (context, url  ,error) => Icon(Icons.error_outline ,color: Colors.red,),
+                                                                    placeholder:  (context , url) => Container(child: const Center( child: SpinKitCircle( size: 50, color: Colors.blue, ), ), ),
+                                                                    errorWidget: (context, url  ,error) => const Icon(Icons.error_outline ,color: Colors.red,),
                                                                 ),
                                                             ),
                                                             Expanded(
                                                                 child: Container(
                                                                     height:  height * .18,
-                                                                    padding: EdgeInsets.only(left: 15),
+                                                                    padding: const EdgeInsets.only(left: 15),
                                                                     child: Column(
                                                                         children: [
                                                                             Text(

@@ -10,7 +10,7 @@ import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:nytimes_view_portal/components/category_screen.dart';
 
 class SplashScreen extends StatefulWidget {
-    const SplashScreen({Key? key}) : super(key: key);
+    const SplashScreen({super.key});
 
     @override
     State<SplashScreen> createState() => _SplashScreenState();
@@ -24,7 +24,7 @@ class _SplashScreenState extends State<SplashScreen> {
         super.initState();
         
         Timer(const Duration(seconds: 2), () { 
-            Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => CategoriesScreen()));
+            Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const CategoriesScreen()));
         });
     }
   
