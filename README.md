@@ -1,6 +1,8 @@
 # 2k-2s-flutter-kt
 Итоговая работа по дисциплине "Flutter"
 
+<details><summary>Запуск проекта</summary>
+
 ```bash
 flutter pub get
 
@@ -8,9 +10,9 @@ dart run build_runner build
 
 flutter run
 ```
+</details>
 
-Use free API from The New York Times Developer Network:
-
+В проекте используется открытая API:
 https://developer.nytimes.com/docs/top-stories-product/1/overview
 
 
