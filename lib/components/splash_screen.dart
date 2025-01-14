@@ -39,7 +39,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                        Image.asset('../assets/bmw-desktop-hd.jpg',
+                        Image.asset('/assets/nytimes_brand.png',
                         fit: BoxFit.cover,
                         height:  height * .5,
                         ),
